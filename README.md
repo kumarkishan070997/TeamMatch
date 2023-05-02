@@ -1,3 +1,195 @@
+# PROCESS TO RUN THIS TASK
+
+- CLONE THIS PROJECT SETUP ON YOUR LOCAL
+- RUN -- PHP ARTISAN:MIGRATE
+- HIT THE FOLLOWING API URL
+- API URL - http://127.0.0.1:8000/api/team/fetchdetail
+
+REQUEST_BODY
+------------
+{
+    "grp_1_team_number":6
+}
+
+EXPECTED RESPONSE
+----------------
+{
+    "response": {
+        "code": "200",
+        "message": "Match data fetched successfully.",
+        "data": {
+            "all_teams": {
+                "group_1": [
+                    {
+                        "id": 1,
+                        "name": "team_a_1",
+                        "group_id": 1,
+                        "created_at": null,
+                        "updated_at": null
+                    },
+                    {
+                        "id": 2,
+                        "name": "team_a_2",
+                        "group_id": 1,
+                        "created_at": null,
+                        "updated_at": null
+                    },
+                    {
+                        "id": 3,
+                        "name": "team_a_3",
+                        "group_id": 1,
+                        "created_at": null,
+                        "updated_at": null
+                    },
+                    {
+                        "id": 4,
+                        "name": "team_a_4",
+                        "group_id": 1,
+                        "created_at": null,
+                        "updated_at": null
+                    },
+                    {
+                        "id": 5,
+                        "name": "team_a_5",
+                        "group_id": 1,
+                        "created_at": null,
+                        "updated_at": null
+                    },
+                    {
+                        "id": 6,
+                        "name": "team_a_6",
+                        "group_id": 1,
+                        "created_at": null,
+                        "updated_at": null
+                    }
+                ],
+                "group_2": [
+                    {
+                        "id": 7,
+                        "name": "team_b_1",
+                        "group_id": 2,
+                        "created_at": null,
+                        "updated_at": null
+                    },
+                    {
+                        "id": 8,
+                        "name": "team_b_2",
+                        "group_id": 2,
+                        "created_at": null,
+                        "updated_at": null
+                    },
+                    {
+                        "id": 9,
+                        "name": "team_b_3",
+                        "group_id": 2,
+                        "created_at": null,
+                        "updated_at": null
+                    },
+                    {
+                        "id": 10,
+                        "name": "team_b_4",
+                        "group_id": 2,
+                        "created_at": null,
+                        "updated_at": null
+                    },
+                    {
+                        "id": 11,
+                        "name": "team_b_5",
+                        "group_id": 2,
+                        "created_at": null,
+                        "updated_at": null
+                    },
+                    {
+                        "id": 12,
+                        "name": "team_b_6",
+                        "group_id": 2,
+                        "created_at": null,
+                        "updated_at": null
+                    },
+                    {
+                        "id": 13,
+                        "name": "team_b_7",
+                        "group_id": 2,
+                        "created_at": null,
+                        "updated_at": null
+                    }
+                ]
+            },
+            "quarter_finalists": [
+                {
+                    "id": 1,
+                    "team_id": 13,
+                    "group_id": 2,
+                    "points": 0,
+                    "team_name": "team_b_7"
+                },
+                {
+                    "id": 2,
+                    "team_id": 1,
+                    "group_id": 1,
+                    "points": 14,
+                    "team_name": "team_a_1"
+                },
+                {
+                    "id": 3,
+                    "team_id": 10,
+                    "group_id": 2,
+                    "points": 16,
+                    "team_name": "team_b_4"
+                },
+                {
+                    "id": 4,
+                    "team_id": 11,
+                    "group_id": 2,
+                    "points": 14,
+                    "team_name": "team_b_5"
+                }
+            ],
+            "semi_finalists": [
+                {
+                    "id": 1,
+                    "team_id": 1,
+                    "group_id": 1,
+                    "points": 8,
+                    "team_name": "team_a_1"
+                },
+                {
+                    "id": 2,
+                    "team_id": 2,
+                    "group_id": 1,
+                    "points": 4,
+                    "team_name": "team_a_2"
+                },
+                {
+                    "id": 3,
+                    "team_id": 4,
+                    "group_id": 1,
+                    "points": 10,
+                    "team_name": "team_a_4"
+                }
+            ],
+            "finalists": [
+                {
+                    "id": 1,
+                    "team_id": 1,
+                    "group_id": 1,
+                    "points": 4,
+                    "team_name": "team_a_1"
+                },
+                {
+                    "id": 2,
+                    "team_id": 2,
+                    "group_id": 1,
+                    "points": 8,
+                    "team_name": "team_a_2"
+                }
+            ],
+            "winner": "team_a_1"
+        }
+    }
+}
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
